@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --header-black: #282828;
+  --red: #dd0a02;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  font-family: Montserrat, "sans-serif";
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*Header*/
+header {
+  background-color: var(--header-black);
+  color: var(--white);
+}
+.header {
+  padding: 28px 0;
+}
+.nav-items {
+  gap: 40px;
+}
+.nav-items li a {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+.nav-items li a:hover {
+  color: var(--red);
+  transition: all ease 0.3s;
+}
+.demo-btn a {
+  padding: 10px 20px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+.demo-btn a:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}

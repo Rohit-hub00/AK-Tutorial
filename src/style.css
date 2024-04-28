@@ -13,6 +13,8 @@
 
 body {
   font-family: Montserrat, "sans-serif";
+  background-color: var(--header-black);
+  color: var(--white);
 }
 
 .container {
@@ -22,13 +24,6 @@ body {
 }
 
 /*Header*/
-header {
-  background-color: var(--header-black);
-  color: var(--white);
-}
-.header {
-  padding: 28px 0;
-}
 .nav-items {
   gap: 40px;
 }
@@ -43,7 +38,6 @@ header {
   transition: all ease 0.3s;
 }
 .demo-btn a {
-  padding: 10px 20px;
   background-color: var(--white);
   color: var(--black);
   font-size: 18px;
@@ -57,7 +51,26 @@ header {
   color: var(--white);
   transition: all ease 0.5s;
 }
+/*Header*/
 
+/*Hero-sec*/
+.hero-sec {
+  height: 90vh;
+  background-image: url("../asset/Book-Ban-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 span.red-color {
+  color: var(--red);
+}
+/*Hero-sec*/
+
+/*Programs*/
+
+/*Programs*/
+
+/*Media Query--> max-767*/
 @media screen and (max-width: 767px) {
   .container {
     padding: 0 20px;
